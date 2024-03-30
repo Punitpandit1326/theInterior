@@ -840,7 +840,7 @@ a.a_link {
   position: inherit;
 }
 
-.form_box2{
+.form_box2 {
   display: none;
 }
 
@@ -912,7 +912,7 @@ a.a_link {
   height: 46px;
 }
 
-.tabHide{
+.tabHide {
   display: none;
 }
 
@@ -1345,49 +1345,48 @@ a.a_link {
     object-fit: cover;
   }
 
-
-  .form_box2{
+  .form_box2 {
     display: block;
   }
 
-     
-  .mbSt_outer{
-    width:100%;
+  .mbSt_outer {
+    width: 100%;
     position: fixed;
     left: 0;
     bottom: 0;
-    z-index:11;
-}
+    z-index: 11;
+  }
 
-.mb_wh{
-    background:green;
-    color:white;
+  .mb_wh {
+    background: green;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.mb_cn > p , .mb_wh > p{
-    margin:10px 10px;
-}
+  .mb_cn > p,
+  .mb_wh > p {
+    margin: 10px 10px;
+  }
 
-.mb_cn{
-    background:black;
-    color:white;
-    display:flex;
+  .mb_cn {
+    background: black;
+    color: white;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.tabHide{
-display: block;
-}
+  .tabHide {
+    display: block;
+  }
 
   .form_box2 form {
-    padding: 0px 45px;
-    width: 420px;
+    padding: 0px;
+    width: 80%;
     margin: 0 auto;
-}
+  }
 
   .banner {
     background: url("../Photos/unplash.jpg") no-repeat;
