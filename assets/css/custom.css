@@ -1308,8 +1308,13 @@ a.a_link {
     font-size: 30px;
     line-height: 35px;
   }
+
+  .residental {
+    margin: 20px;
+  }
+
   .banner {
-    background: url(../images/Mobile_Bannner.jpg) no-repeat;
+    background: url("../Photos/kitchen_3.jpg") no-repeat;
     background-size: cover;
     padding: 126px 0;
     background-position: center;
