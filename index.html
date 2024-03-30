@@ -6,7 +6,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
       name="viewport"
     />
-    <title>Home Interior Solutions - D2R Interiors</title>
+    <title>Home Interior Solutions - Interiors</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/custom.css" rel="stylesheet" />
     <link href="assets/css/intlTelInput.css" rel="stylesheet" />
@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="icon" href="assets/images/fav.ico" type="image/png" />
     <link rel="stylesheet" href="assets/css/datepicker.css" />
     <link href="assets/css/mdtimepicker.css" rel="stylesheet" type="text/css" />
@@ -258,6 +259,149 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="form_box form_box2">
+        <h3>Get Closer To Your Dream Home</h3>
+        <form action="" method="POST" id="formone">
+          <div class="field_cls validtn">
+            <input
+              type="text"
+              name="Name"
+              maxlength="25"
+              placeholder="Name"
+              class="form-control inponr"
+            />
+            <span class="errorspan" style="color: red"
+              >This field is required</span
+            >
+          </div>
+          <div class="field_cls validtn">
+            <input
+              type="email"
+              name="Email"
+              maxlength="65"
+              placeholder="Email"
+              class="form-control inponr emailinp"
+            />
+            <span class="errorspan" style="color: red"
+              >This field is required</span
+            >
+            <span class="erroremailspan" style="color: red">Invalid email</span>
+          </div>
+          <div class="center field_cls validtn">
+            <select
+              name="Budget"
+              id="sources"
+              class="custom-select sources inponr"
+              placeholder="Budget"
+            >
+              <option value="">Select</option>
+              <option value="7-10L">7 - 10 Lakh</option>
+              <option value="10-14L">10 - 14 Lakh</option>
+              <option value="above 14L">Above 14 Lakh</option>
+            </select>
+            <span class="errorspan" style="color: red"
+              >This field is required</span
+            >
+          </div>
+
+          <!--  <div class="field_cls validtn">
+                <input type="text" data-date-format="dd/mm/yyyy" name="selected_date" id="datepicker1" maxlength="25" placeholder="Callback Date" class="form-control inponr">
+                <span class="errorspan" style="color:red">This field is required</span>
+             </div>
+             <div class="field_cls validtn">
+                <input type="text" name="Time" id="timepicker1" maxlength="25" placeholder="Callback Time" class="form-control inponr">
+                <span class="errorspan" style="color:red">This field is required</span>
+             </div> -->
+
+          <div class="center field_cls validtn">
+            <select
+              id="first-dropdown"
+              name="status"
+              class="custom-select sources inponr"
+              onchange="updateSecondDropdown()"
+            >
+              <option value="">Home ready for interior design now?</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+            <span class="errorspan" style="color: red"
+              >This field is required</span
+            >
+          </div>
+
+          <div class="center field_cls validtn">
+            <select
+              id="second-dropdown"
+              name="current_stage"
+              class="custom-select sources inponr"
+              onchange="updateThirdDropdown()"
+              disabled
+            >
+              <option value="">Current Stage Of Construction?</option>
+            </select>
+            <span class="errorspan" style="color: red"
+              >This field is required</span
+            >
+          </div>
+
+          <div class="center field_cls validtn">
+            <select
+              id="third-dropdown"
+              name="completion_date"
+              class="custom-select sources inponr"
+              disabled
+            >
+              <option value="">When the construction will be completed?</option>
+            </select>
+            <span class="errorspan" style="color: red"
+              >This field is required</span
+            >
+          </div>
+
+          <div class="field_cls mb-0 validtn">
+            <input
+              type="tel"
+              name="Phone"
+              maxlength="13"
+              class="cphone inponr"
+              placeholder="Phone"
+            />
+            <span class="errorspan" style="color: red; text-align: left"
+              >This field is required</span
+            >
+          </div>
+          <input
+            type="text"
+            readonly
+            class="form_btn"
+            onclick="onsubmitform(event)"
+            placeholder="Get A Free Consultation"
+          />
+          <div class="lodingsect">
+            <img src="assets/images/loading.gif" />
+          </div>
+          <input type="hidden" name="Date" id="submission_date" />
+          <input type="hidden" name="Month" id="submission_month" />
+          <input type="hidden" class="utmsource" name="utm_source" />
+          <input type="hidden" class="utmmedium" name="utm_medium" />
+          <input type="hidden" class="utmcampaign" name="utm_campaign" />
+          <input type="hidden" class="utmterm" name="utm_term" />
+          <input type="hidden" class="utmcontent" name="utm_content" />
+          <input type="hidden" name="page_url" id="page_url" />
+          <input
+            type="checkbox"
+            name="contact_me"
+            value="1"
+            style="display: none !important"
+            tabindex="-1"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+    </section>
+
     <section class="mt-5">
       <h2 class="main_head pt-5">The Dreams We Have Helped Build</h2>
       <p class="main_head_p">
@@ -481,7 +625,7 @@
 
           <div class="img_box">
             <div class="img_txt">
-              <img src="assets/images/nnmain1.webp" />
+              <img src="assets/Photos/IMG-20240328-WA0005.jpg" />
               <div class="img_flx">
                 <div class="gallery">
                   <div class="nameandlink">
@@ -1250,175 +1394,6 @@
           </div>
         </div>
 
-        <!-- <div class="flx_box">
-               <div class="img_box">
-                  <div class="img_txt">
-                     <img src="assets/images/Gallery_Logo.webp">
-                  </div>
-               </div>
-               <div class="img_box">
-                  <div class="img_txt">
-                     <img src="assets/images/Gallery04.webp">
-                     <div class="img_flx">
-                        <div class="gallery">
-                           <div class="nameandlink">
-                              <h6>Mr. Shanfeer, Trivandrum</h6>
-                              <a href="#" class="a_link ">View More Works
-                              </a>
-                           </div>
-                           <div class="demo-gallery">
-                              <ul id="" class="lightgalleryy">
-                                 <li data-src="assets/images/gal_03.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_03.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_04.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_04.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_05.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_05.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_06.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_06.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_07.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_07.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_08.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_08.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_09.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_09.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_10.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_10.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_11.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_11.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_12.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_12.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_13.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_13.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_14.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_14.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_15.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_15.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_23.webp"
-                                 >
-                                 <a href="">
-                                 <img class="img-responsive" src="assets/images/gal_23.webp">
-                                 </a>
-                              </li>
-                                 <li data-src="assets/images/gal_16.webp"
-                                 >
-                                 <a href="">
-                                 <img class="img-responsive" src="assets/images/gal_16.webp">
-                                 </a>
-                              </li>
-                                 <li data-src="assets/images/gal_17.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_17.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_18.webp"
-                                    >
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_18.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_19.webp"
-                                 >
-                                 <a href="">
-                                 <img class="img-responsive" src="assets/images/gal_19.webp">
-                                 </a>
-                              </li>
-                              <li data-src="assets/images/gal_20.webp"
-                              >
-                              <a href="">
-                              <img class="img-responsive" src="assets/images/gal_20.webp">
-                              </a>
-                           </li>
-                           <li data-src="assets/images/gal_21.webp"
-                           >
-                           <a href="">
-                           <img class="img-responsive" src="assets/images/gal_21.webp">
-                           </a>
-                        </li>
-                        <li data-src="assets/images/gal_22.webp"
-                        >
-                        <a href="">
-                        <img class="img-responsive" src="assets/images/gal_22.webp">
-                        </a>
-                     </li>
-     
-                  <li data-src="assets/images/gal_24.webp"
-                  >
-                  <a href="">
-                  <img class="img-responsive" src="assets/images/gal_24.webp">
-                  </a>
-               </li>
-                                 <li data-src="assets/images/gal_01.webp">
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_01.webp">
-                                    </a>
-                                 </li>
-                                 <li data-src="assets/images/gal_02.webp">
-                                    <a href="">
-                                    <img class="img-responsive" src="assets/images/gal_02.webp">
-                                    </a>
-                                 </li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div> -->
-
         <div class="flx_box">
           <div class="img_txt">
             <img src="assets/images/Gallery05.webp" />
@@ -1649,6 +1624,7 @@
           haven that reflects your personality and enhances your everyday living
           experience.
         </p>
+        <img src="/assets/images/gal_22.webp" alt="residental" />
       </div>
 
       <div class="residental">
@@ -1663,6 +1639,7 @@
           optimize spatial layouts, select furnishings, and integrate branding
           elements seamlessly.
         </p>
+        <img src="/assets/Photos/dining.jpg" alt="Commercial" />
       </div>
 
       <div class="container p-0">
@@ -1673,8 +1650,6 @@
             pocket
           </p>
           <div class="package_box">
-
-          
             <div class="package_boxx">
               <img src="assets/Photos/room.jpg" />
               <div class="tag">BEAUTIFICATION</div>
@@ -1682,7 +1657,7 @@
                 <h2>Turnkey 3BHK home or Flat Interior</h2>
                 <h6>Special Discount Ofeer</h6>
                 <div class="subtxt">
-                  <h3>₹ 7.93 Lakhs</h3>
+                  <h3>₹ 9.66 Lakhs</h3>
                   <button data-toggle="modal" data-target="#basicModal1">
                     Enquire Now
                   </button>
@@ -1696,7 +1671,7 @@
                 <h2>Luxury 3BHK home</h2>
                 <h6>Special Discount Offer</h6>
                 <div class="subtxt">
-                  <h3>₹ 10.66 Lakhs</h3>
+                  <h3>₹ 14.95 Lakhs</h3>
                   <button data-toggle="modal" data-target="#basicModal1">
                     Enquire Now
                   </button>
@@ -1710,7 +1685,7 @@
                 <h2>Turnkey 3 Bhk Home or Flat Interior</h2>
                 <h6>Special Discount Ofeer</h6>
                 <div class="subtxt">
-                  <h3>₹ 14.95 Lakhs</h3>
+                  <h3>₹ 19.66 Lakhs</h3>
                   <button data-toggle="modal" data-target="#basicModal1">
                     Enquire Now
                   </button>
@@ -2651,7 +2626,7 @@
                         <img src="assets/images/Quote.png" class="quote" />
                         <p>
                           “The elaborate set designs made in the field of cinema
-                          by top art directors was surpassed by the team of D2R
+                          by top art directors was surpassed by the team of
                           interiors at a very affordable cost. I shall
                           definitely recommend the team to my friends and
                           colleagues. “
@@ -2664,9 +2639,9 @@
                         <img src="assets/images/testi_1.webp" />
                         <img src="assets/images/Quote.png" class="quote" />
                         <p>
-                          D2R Interiors provide top quality design and I am
-                          happy with the service and budget when comparing to
-                          other designers that I had approached earlier.
+                          Interiors provide top quality design and I am happy
+                          with the service and budget when comparing to other
+                          designers that I had approached earlier.
                         </p>
                         <h4>Mr.Guna, Koottattukulam</h4>
                       </div>
@@ -2676,7 +2651,7 @@
                         <img src="assets/images/testi_02.webp" />
                         <img src="assets/images/Quote.png" class="quote" />
                         <p>
-                          My expectations were surpassed when D2R interiors
+                          My expectations were surpassed when interiors
                           delivered my project on time and in a pocket friendly
                           manner.
                         </p>
@@ -2688,9 +2663,8 @@
                         <img src="assets/images/testi_03.webp" />
                         <img src="assets/images/Quote.png" class="quote" />
                         <p>
-                          I approached D2R for renovating the interiors of my
-                          old house .They were efficient and great at the
-                          execution.
+                          I approached for renovating the interiors of my old
+                          house .They were efficient and great at the execution.
                         </p>
                         <h4>Mr. Johnson</h4>
                       </div>
@@ -2701,7 +2675,7 @@
                         <img src="assets/images/Quote.png" class="quote" />
                         <p>
                           The confirmed drawings were executed perfectly to the
-                          smallest details by the team at D2R Interiors. I am
+                          smallest details by the team at Interiors. I am
                           totally satisfied with their work.
                         </p>
                         <h4>Mr. Joby Iritty</h4>
@@ -2712,11 +2686,11 @@
                         <img src="assets/images/testi_05.webp" />
                         <img src="assets/images/Quote.png" class="quote" />
                         <p>
-                          I am very happy and satisfied with D2R interiors
-                          design work. I approached them for my living ,dining
-                          and bedroom work. I also recommended them to my four
-                          of my friends who were also looking for superior
-                          interior design solutions.
+                          I am very happy and satisfied with interiors design
+                          work. I approached them for my living ,dining and
+                          bedroom work. I also recommended them to my four of my
+                          friends who were also looking for superior interior
+                          design solutions.
                         </p>
                         <h4>Mr. Bino Mathew</h4>
                       </div>
@@ -2726,10 +2700,10 @@
                         <img src="assets/images/testi_06.webp" />
                         <img src="assets/images/Quote.png" class="quote" />
                         <p>
-                          I approached D2R interiors when renovating my old
-                          house for the interior design work. They used top
-                          quality materials which ensured a superb finish and
-                          look to my old home.
+                          I approached interiors when renovating my old house
+                          for the interior design work. They used top quality
+                          materials which ensured a superb finish and look to my
+                          old home.
                         </p>
                         <h4>Mr. Cyriac</h4>
                       </div>
@@ -2818,13 +2792,37 @@
         >
       </div>
     </section>
+
+    <section class=" tabHide">
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
+            
+            <div class="col-6 text-center mb_cn">
+                <a href="tel:+919818604426" class="mb_cn">
+                  <i class="fas fa-phone-alt"></i>
+                    <p>Call Now</p>
+                </a>
+            </div>
+            
+            
+            <div class="col-6 text-center mb_wh">
+                <a href="https://api.whatsapp.com/send?phone=+918595966321" class="mb_wh">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>Whatsapp</p>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    </section>
     <section class="btm_footer">
       <p>
         ©
         <script>
           document.write(new Date().getFullYear());
         </script>
-        www.d2rinteriors.com. All Rights Reserved
+        www.interiors.com. All Rights Reserved
       </p>
     </section>
 

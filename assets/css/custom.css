@@ -26,7 +26,7 @@ ul {
 }
 
 .banner {
-  background: url("../Photos/kitchen_3.jpg") no-repeat;
+  background: url("../Photos/unplash.jpg") no-repeat;
   background-size: cover;
   padding: 126px 0;
   background-position: center;
@@ -840,6 +840,10 @@ a.a_link {
   position: inherit;
 }
 
+.form_box2{
+  display: none;
+}
+
 .testimonial .carousel-control-prev-icon {
   background: url(../images/arrow_left.png);
   width: 32px;
@@ -906,6 +910,10 @@ a.a_link {
   position: relative;
   float: left;
   height: 46px;
+}
+
+.tabHide{
+  display: none;
 }
 
 .demo-gallery > ul > li a > img {
@@ -1067,12 +1075,21 @@ a.a_link {
 
 .residental {
   margin: 40px 0 70px 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .residental h6 {
   font-size: 20px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+}
+
+.residental img {
+  width: 50%;
+  height: 50%;
 }
 
 @-webkit-keyframes shine {
@@ -1175,6 +1192,11 @@ a.a_link {
   }
   .package_box .package_boxx:nth-child(1) {
     margin-right: 0;
+  }
+
+  .gallery_box img {
+    width: 100%;
+    height: 300px;
   }
   .logo {
     left: 0;
@@ -1312,9 +1334,63 @@ a.a_link {
   .residental {
     margin: 20px;
   }
+  .residental img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .drem_boxes img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+
+  .form_box2{
+    display: block;
+  }
+
+     
+  .mbSt_outer{
+    width:100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index:11;
+}
+
+.mb_wh{
+    background:green;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb_cn > p , .mb_wh > p{
+    margin:10px 10px;
+}
+
+.mb_cn{
+    background:black;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabHide{
+display: block;
+}
+
+  .form_box2 form {
+    padding: 0px 45px;
+    width: 420px;
+    margin: 0 auto;
+}
 
   .banner {
-    background: url("../Photos/kitchen_3.jpg") no-repeat;
+    background: url("../Photos/unplash.jpg") no-repeat;
     background-size: cover;
     padding: 126px 0;
     background-position: center;
@@ -1339,7 +1415,7 @@ a.a_link {
   }
   .sub_txt h6,
   .img_txt {
-    margin-bottom: 10px;
+    margin: 10px 0;
   }
   .sub_txt h2 {
     line-height: 24px;
@@ -1443,6 +1519,7 @@ a.a_link {
   .drem_boxes .box_2_sub h2,
   .coloum_rev .box_2_txt h2 {
     text-align: center;
+    white-space: nowrap;
   }
   .box_2 .box_2_sub:nth-child(1) {
     flex-direction: column-reverse;
