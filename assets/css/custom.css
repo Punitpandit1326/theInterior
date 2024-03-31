@@ -87,7 +87,7 @@ input {
 
 .form_box form {
   background: #ffffff2e;
-  padding: 0px 45px;
+  padding: 0px 10px;
   width: 450px;
   position: relative;
   z-index: 3;
@@ -539,7 +539,8 @@ a.a_link {
 }
 
 .quality_right img {
-  width: 100%;
+  width: 80%;
+  margin-left: 40px;
 }
 
 .btm_footer {
@@ -1384,7 +1385,7 @@ a.a_link {
 
   .form_box2 form {
     padding: 0px;
-    width: 80%;
+    width: 96%;
     margin: 0 auto;
   }
 
